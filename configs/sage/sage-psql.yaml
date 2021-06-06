@@ -1,0 +1,17 @@
+name: SaGe experimental server
+quota: 60000
+max_results: 10000
+graphs:
+- name: sage_psql
+  uri: http://localhost:8080/sparql/sage_psql
+  backend: postgres
+  dbname: sage
+  user: sage
+  password: 'sage'
+-
+  name: sage_psql_catalog
+  uri: http://localhost:8080/sparql/sage_psql_catalog
+  backend: postgres-catalog
+  dbname: sage
+  user: sage
+  password: 'sage'

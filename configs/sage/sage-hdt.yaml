@@ -1,0 +1,9 @@
+name: SaGe experimental server
+quota: 60000
+max_results: 10000
+graphs:
+-
+  name: sage_hdt
+  uri: http://localhost:8080/sparql/sage_hdt
+  backend: hdt-file
+  file: graphs/watdiv.100M.hdt

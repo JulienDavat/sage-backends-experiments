@@ -1,0 +1,9 @@
+name: SaGe experimental server
+quota: 60000
+max_results: 10000
+graphs:
+-
+  name: sage_sqlite_100M
+  uri: http://localhost:8080/sparql/sage_sqlite
+  backend: sqlite
+  database: graphs/sage-sqlite-100M.db
