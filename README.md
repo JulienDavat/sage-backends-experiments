@@ -17,19 +17,19 @@ queries such that all queries complete at least in 30 minutes.
 ## Machine configuration
 
 We run all our experiments on a `MacBook Pro` with a `2,3 GHz Intel Core i7`
-processor and a `1TB SSD disk`.
+processor, `16GB of RAM` and a `1TB SSD disk`.
 
 ## Plots
 
-**Plot 1**: Execution time of the query `?s ?p ?o` using the different backends.
+**Plot 1**: Backends execution time when running the `?s ?p ?o` query.
 
 ![](figures/spo_execution_times.png?raw=true)
 
-**Plot 2**: Supend/Resume time of the different backends and triple pattern shapes.
+**Plot 2**: Backends suspend/resume time for different triple pattern shapes.
 
 ![](figures/suspend_resume_times.png?raw=true)
 
-**Plot 3**: The execution time of the different backends on the `WatDiv` queries.
+**Plot 3**: Backends execution time when running the 60 `WatDiv` queries.
 
 ![](figures/execution_times.png?raw=true)
 
@@ -39,10 +39,10 @@ processor and a `1TB SSD disk`.
 
 To run our experiments, the following softwares and packages have to be installed on your system.
 * [Python3.7](https://www.python.org) with developpement headers
-* [Virtualenv](https://pypi.org/project/virtualenv)
-* [sage-engine](https://github.com/sage-org/sage-engine)
-* [PostgreSQL](https://www.postgresql.org)
-* [HBase](https://hbase.apache.org)
+* [Virtualenv](https://pypi.org/project/virtualenv) (optional)
+* [sage-engine](https://github.com/sage-org/sage-engine) with HDT, HBase and PostgreSQL dependencies
+* [PostgreSQL](https://www.postgresql.org) for the PostgreSQL backend of SaGe
+* [HBase](https://hbase.apache.org) for the HBase backend of SaGe
 
 ## Installation
 
