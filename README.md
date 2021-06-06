@@ -76,10 +76,18 @@ cd ..
 sage-postgres-init --no-index configs/sage/backends.yaml sage_psql
 sage-postgres-put graphs/watdiv10M.nt configs/sage/backends.yaml sage_psql
 sage-postgres-index configs/sage/backends.yaml sage_psql
+# insert data into PostgreSQL using the dictionnary layout
+sage-postgres-init --no-index configs/sage/backends.yaml sage_psql_catalog
+sage-postgres-put graphs/watdiv10M.nt configs/sage/backends.yaml sage_psql_catalog
+sage-postgres-index configs/sage/backends.yaml sage_psql_catalog
 # insert data into SQLite
 sage-sqlite-init --no-index configs/sage/backends.yaml sage_sqlite
 sage-sqlite-put graphs/watdiv10M.nt configs/sage/backends.yaml sage_sqlite
 sage-sqlite-index configs/sage/backends.yaml sage_sqlite
+# insert data into SQLite using the dictionnary layout
+sage-sqlite-init --no-index configs/sage/backends.yaml sage_sqlite_catalog
+sage-sqlite-put graphs/watdiv10M.nt configs/sage/backends.yaml sage_sqlite_catalog
+sage-sqlite-index configs/sage/backends.yaml sage_sqlite_catalog
 # insert data into HBase
 sage-hbase-init --no-index configs/sage/backends.yaml sage_hbase
 sage-hbase-put graphs/watdiv10M.nt configs/sage/backends.yaml sage_hbase
